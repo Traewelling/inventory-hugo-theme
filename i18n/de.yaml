@@ -1,0 +1,10 @@
+---
+- buttons:
+    edit_page: Seite bearbeiten
+- layouts:
+    redirect_title: Diese Seite wurde verschoben
+    redirect_body: Diese Seite wurde verschoben. Du wirst in 5 Sekunden weitergeleitet. Bitte aktualisiere deine Lesezeichen. Wenn du nicht weitergeleitet wirst, folge bitte dem Link unten.
+- footer:
+    legal: "Find legal information and policies related to {{ $.Site.Params.brand.parent_org_name }}'s digital communications."
+- topics_title: Durchsuche unsere Doku nach Themen
+- send: Senden
