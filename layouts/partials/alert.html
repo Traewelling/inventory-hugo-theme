@@ -45,15 +45,15 @@
     </div>
   </div>
   </div>
-{{ else }}
-  <script>
-    remSpace()
-  </script>
 {{end}}
 
 
 <script>
   function remSpace() {
-    document.getElementById("section").style.paddingTop = "3rem";
+    var section = document.getElementById("section");
+    if (section) {
+      section.style.paddingTop = "3rem";
+    }
   }
+  {{ if not (gt $alertCount 0) }}remSpace();{{ end }}
 </script>

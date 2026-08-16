@@ -23,8 +23,8 @@
   <!--<link href="https://fonts.googleapis.com/css?family={{replace .Site.Params.font_family ' ' '+' | title}}:300,400,700&display=swap" rel="stylesheet">-->
 
   {{ "<!-- PDF.js -->" | safeHTML }}
-  <script src="{{ `plugins/ajax/pdf.min.js` }}"></script>
-  <script src="{{ `plugins/ajax/html2pdf.bundle.js` }}"></script>
+  <script src="{{ `plugins/ajax/pdf.min.js` | absURL }}"></script>
+  <script src="{{ `plugins/ajax/html2pdf.bundle.js` | absURL }}"></script>
 
   {{ "<!-- fonts -->" | safeHTML }}
   <!--<script src="{{ `plugins/fontawesome/9196e0632a.js.js` }}" crossorigin="anonymous"></script>-->
@@ -59,7 +59,7 @@
 <script src="{{ `plugins/bootstrap/bootstrap.min.js` | absURL }}"></script>
 
 {{ "<!-- PopperJS -->" | safeHTML }}
-<script src="{{ `plugins/popperjs/popper.min.js` }}"></script>
+<script src="{{ `plugins/popperjs/popper.min.js` | absURL }}"></script>
 
 {{ "<!-- match-height JS -->" | safeHTML }}
 <script src="{{ `plugins/match-height/jquery.matchHeight-min.js` | absURL }}"></script>
